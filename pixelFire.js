@@ -12,8 +12,8 @@ myImage.addEventListener('load', () => {
 
     // w = 500
     // h = 706
-    let h = myImage.height
-    let w = myImage.width
+    let h = window.innerHeight
+    let w = window.innerWidth
 
     canvas.width = w
     canvas.height = h
@@ -110,9 +110,9 @@ grd1.addColorStop(0.8 , 'violet')
         requestAnimationFrame(animate)
     }
     animate()
-    // setInterval(() => {
-    //     animate()
-    // }, 100);
+    
+ 
+
 
 })
 
