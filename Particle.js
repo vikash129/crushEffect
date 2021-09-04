@@ -29,8 +29,8 @@ class Particle {
         this.size = this.speed * 1.5
 
 
-        this.y += movement + Math.sin(this.angle) ;
-        this.x += movement + Math.cos(this.angle) ;
+        this.y += movement + Math.sin(this.angle) * 3 ;
+        this.x += movement + Math.cos(this.angle) /2;
 
       
 
