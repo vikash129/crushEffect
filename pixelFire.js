@@ -24,12 +24,12 @@ myImage.addEventListener('load', () => {
 
     const grd1 = ctx.createLinearGradient( 0, 0, canvas.width, canvas.height)
 grd1.addColorStop(0.2 , 'pink')
-grd1.addColorStop(0.3 , 'red')
+grd1.addColorStop(0.3 , 'violet')
 grd1.addColorStop(0.4 , 'orange')
 grd1.addColorStop(0.5 , 'yellow')
 grd1.addColorStop(0.6 , 'green')
 grd1.addColorStop(0.7 , 'turquoise')
-grd1.addColorStop(0.8 , 'violet')
+grd1.addColorStop(0.8 , 'red')
 
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height)
 
