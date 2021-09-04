@@ -6,7 +6,7 @@ class Particle {
         this.x = Math.random() * w;
         this.y = Math.random() * h;
         this.speed = 0;
-        this.vel = Math.random() * 0.5;
+        this.vel = Math.random() * 0.5 + 0.5;
         this.size = Math.random() * 2.5 + 0.2
         this.angle = 0
         
@@ -19,7 +19,7 @@ class Particle {
 
         if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
             this.speed = mappedImage[this.posy][this.posx][0]
-        mappedImage[this.posy][this.posx][1]
+        
 
         }
       
@@ -48,10 +48,10 @@ class Particle {
 
         ctx.beginPath()
 
-        if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
-            ctx.fillStyle =  mappedImage[this.posy][this.posx][1]
-        }
-        // ctx.fillStyle = grd1
+        //if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
+        //    ctx.fillStyle =  mappedImage[this.posy][this.posx][1]
+       // }
+         ctx.fillStyle = grd1
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.fill()
     }
