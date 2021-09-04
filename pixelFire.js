@@ -81,7 +81,7 @@ grd1.addColorStop(0.8 , 'violet')
     }
 
     let particles = []
-    const noOfParticles = 3000
+    const noOfParticles = 7000
 
     function init() {
         for (let i = 0; i < noOfParticles; i++) {
