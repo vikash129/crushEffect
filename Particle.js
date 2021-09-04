@@ -48,10 +48,10 @@ class Particle {
 
         ctx.beginPath()
 
-        //if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
-        //ctx.fillStyle =  mappedImage[this.posy][this.posx][1]}
+        if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
+        ctx.fillStyle =  mappedImage[this.posy][this.posx][1]}
        
-         ctx.fillStyle = grd1
+        // ctx.fillStyle = grd1
 
 
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
