@@ -26,7 +26,7 @@ class Particle {
         let movement = (2.5 - this.speed) + this.vel +1
 
         this.angle+=this.speed/20
-        this.size = this.speed * 1.5
+        this.size = this.speed * 2
 
 
         this.y += movement + Math.sin(this.angle) * 3 ;
