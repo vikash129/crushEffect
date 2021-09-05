@@ -32,7 +32,7 @@ class Particle {
 
 
 
-        this.y += movement + Math.sin(this.angle)
+        this.y += movement + Math.sin(this.angle) *2
          
 
         if (this.y >= this.h) {
