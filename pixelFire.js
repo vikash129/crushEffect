@@ -13,8 +13,8 @@ myImage.addEventListener('load', () => {
 
     // w = 500
     // h = 706
-    let h = myImage.height
-    let w = myImage.width
+    let h = window.innerHeight
+    let w = window.innerWidth
 
     canvas.width = w
     canvas.height = h
@@ -27,6 +27,7 @@ myImage.addEventListener('load', () => {
 grd1.addColorStop(0 , 'green')
 grd1.addColorStop(0.1 , 'white')
 grd1.addColorStop(0.2 , 'pink')
+<<<<<<< HEAD
 grd1.addColorStop(0.3 , 'orange')
 grd1.addColorStop(0.4 , 'yellow')
 grd1.addColorStop(0.5 , 'red')
@@ -35,6 +36,14 @@ grd1.addColorStop(0.7 , 'green')
 grd1.addColorStop(0.8 , 'turquoise')
 grd1.addColorStop(0.9 , 'violet')
 grd1.addColorStop(1 , 'rgb(190 135 34)')
+=======
+grd1.addColorStop(0.3 , 'violet')
+grd1.addColorStop(0.4 , 'orange')
+grd1.addColorStop(0.5 , 'yellow')
+grd1.addColorStop(0.6 , 'green')
+grd1.addColorStop(0.7 , 'turquoise')
+grd1.addColorStop(0.8 , 'red')
+>>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
 
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height)
 
@@ -115,7 +124,13 @@ grd1.addColorStop(1 , 'rgb(190 135 34)')
         requestAnimationFrame(animate)
     }
     animate()
+<<<<<<< HEAD
    
+=======
+    
+ 
+
+>>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
 
 })
 
