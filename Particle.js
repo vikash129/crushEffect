@@ -8,7 +8,7 @@ class Particle {
         this.y = 0;
         this.speed = 0;
         this.vel = Math.random() * 0.5;
-        this.size = Math.random() * 2.5 + 0.2 
+        this.size = Math.random() * 1.5 + 0.2 
         this.angle = 0
         
     }
@@ -28,7 +28,7 @@ class Particle {
         let movement = (2.5 - this.speed) + this.vel 
 
         this.angle+=this.speed/20
-        this.size = this.speed * 2
+        this.size = this.speed 
 
 
 
