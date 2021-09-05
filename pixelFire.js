@@ -35,14 +35,6 @@ grd1.addColorStop(0.7 , 'green')
 grd1.addColorStop(0.8 , 'turquoise')
 grd1.addColorStop(0.9 , 'violet')
 grd1.addColorStop(1 , 'rgb(190 135 34)')
-=======
-grd1.addColorStop(0.3 , 'violet')
-grd1.addColorStop(0.4 , 'orange')
-grd1.addColorStop(0.5 , 'yellow')
-grd1.addColorStop(0.6 , 'green')
-grd1.addColorStop(0.7 , 'turquoise')
-grd1.addColorStop(0.8 , 'red')
->>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
 
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height)
 
@@ -123,13 +115,6 @@ grd1.addColorStop(0.8 , 'red')
         requestAnimationFrame(animate)
     }
     animate()
-<<<<<<< HEAD
-   
-=======
-    
- 
-
->>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
 
 })
 
