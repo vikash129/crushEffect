@@ -20,10 +20,8 @@ class Particle {
 
         if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
             this.speed = mappedImage[this.posy][this.posx][0]
-<<<<<<< HEAD
-=======
+
         
->>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
 
         }
       
@@ -33,17 +31,16 @@ class Particle {
         this.size = this.speed * 2
 
 
-<<<<<<< HEAD
+
         this.y += movement + Math.sin(this.angle)
         // this.y += movement 
          
-=======
+
         this.y += movement + Math.sin(this.angle) * 3 ;
         this.x += movement + Math.cos(this.angle) /2;
 
       
 
->>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
         if (this.y >= this.h) {
             this.y = 0;
             this.x = Math.random() * this.w
@@ -60,19 +57,16 @@ class Particle {
 
         ctx.beginPath()
 
-<<<<<<< HEAD
         // if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
         //     ctx.fillStyle =  mappedImage[this.posy][this.posx][1]
         // }
         ctx.fillStyle = grd1
-=======
         if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
         ctx.fillStyle =  mappedImage[this.posy][this.posx][1]}
        
         // ctx.fillStyle = grd1
 
 
->>>>>>> fe8462fa594c41b938086a4feee4bd6c25b48d0b
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         // ctx.strokeStyle = grd1
         // ctx.strokeRect(this.x, this.y, this.size * 3, this.size * 3)
