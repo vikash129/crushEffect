@@ -27,7 +27,6 @@ myImage.addEventListener('load', () => {
 grd1.addColorStop(0 , 'green')
 grd1.addColorStop(0.1 , 'white')
 grd1.addColorStop(0.2 , 'pink')
-<<<<<<< HEAD
 grd1.addColorStop(0.3 , 'orange')
 grd1.addColorStop(0.4 , 'yellow')
 grd1.addColorStop(0.5 , 'red')
