@@ -1,10 +1,11 @@
 const myImage = new Image()
 
-var dataList = ['sadaf2', 'sadaf3',  'sadaf' ]
+var dataList = [ 'c2' , 'c3' , 'c4' , 'c5' , 'c6','c7' , 'c8','c9','c10','c11' ]
+//c3
+
 let imgData = dataList[Math.floor(Math.random() * dataList.length)];
-
-fetch('imgData/' + imgData + '.txt').then(res => res.text()).then(src => myImage.src = src)
-
+console.log(imgData)
+fetch('64Img/' + imgData + '.txt').then(res => res.text()).then(src => myImage.src = src)
 
 myImage.addEventListener('load', () => {
 
@@ -23,13 +24,17 @@ myImage.addEventListener('load', () => {
     const ctx = canvas.getContext('2d')
 
     const grd1 = ctx.createLinearGradient( 0, 0, canvas.width, canvas.height)
+grd1.addColorStop(0 , 'green')
+grd1.addColorStop(0.1 , 'white')
 grd1.addColorStop(0.2 , 'pink')
-grd1.addColorStop(0.3 , 'red')
-grd1.addColorStop(0.4 , 'orange')
-grd1.addColorStop(0.5 , 'yellow')
-grd1.addColorStop(0.6 , 'green')
-grd1.addColorStop(0.7 , 'turquoise')
-grd1.addColorStop(0.8 , 'violet')
+grd1.addColorStop(0.3 , 'orange')
+grd1.addColorStop(0.4 , 'yellow')
+grd1.addColorStop(0.5 , 'red')
+grd1.addColorStop(0.6 , 'blue')
+grd1.addColorStop(0.7 , 'green')
+grd1.addColorStop(0.8 , 'turquoise')
+grd1.addColorStop(0.9 , 'violet')
+grd1.addColorStop(1 , 'rgb(190 135 34)')
 
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height)
 
@@ -81,7 +86,7 @@ grd1.addColorStop(0.8 , 'violet')
     }
 
     let particles = []
-    const noOfParticles = 3000
+    const noOfParticles = 7000
 
     function init() {
         for (let i = 0; i < noOfParticles; i++) {
@@ -94,7 +99,7 @@ grd1.addColorStop(0.8 , 'violet')
     function animate() {
 
         ctx.globalAlpha = 0.05;
-        // ctx.fillStyle = 'blue'
+        // ctx.fillStyle = 'pink'
         ctx.fillStyle = '#000000'
         ctx.fillRect(0, 0, canvas.width, canvas.height)
         ctx.globalAlpha = 0.2;
@@ -110,9 +115,7 @@ grd1.addColorStop(0.8 , 'violet')
         requestAnimationFrame(animate)
     }
     animate()
-    // setInterval(() => {
-    //     animate()
-    // }, 100);
+   
 
 })
 
