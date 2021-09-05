@@ -25,7 +25,7 @@ class Particle {
 
         }
       
-        let movement = (2.5 - this.speed) + this.vel +1
+        let movement = (2.5 - this.speed) + this.vel 
 
         this.angle+=this.speed/20
         this.size = this.speed * 2
@@ -33,13 +33,7 @@ class Particle {
 
 
         this.y += movement + Math.sin(this.angle)
-        // this.y += movement 
          
-
-        this.y += movement + Math.sin(this.angle) * 3 ;
-        this.x += movement + Math.cos(this.angle) /2;
-
-      
 
         if (this.y >= this.h) {
             this.y = 0;
@@ -60,11 +54,8 @@ class Particle {
         // if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
         //     ctx.fillStyle =  mappedImage[this.posy][this.posx][1]
         // }
+
         ctx.fillStyle = grd1
-        if ((mappedImage[this.posy]) && (mappedImage[this.posy][this.posx])) {
-        ctx.fillStyle =  mappedImage[this.posy][this.posx][1]}
-       
-        // ctx.fillStyle = grd1
 
 
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
