@@ -1,6 +1,6 @@
 const myImage = new Image()
 
-var dataList = [ 'c2' , 'c3' , 'c4' , 'c5' , 'c6','c7' , 'c8','c9','c10','c11' ]
+var dataList = [ 'c2' , 'c4' , 'c5' , 'c6','c7' , 'c8','c9','c10','c11' ]
 //c3
 
 let imgData = dataList[Math.floor(Math.random() * dataList.length)];
@@ -28,7 +28,7 @@ grd1.addColorStop(0 , 'green')
 grd1.addColorStop(0.1 , 'white')
 grd1.addColorStop(0.2 , 'pink')
 grd1.addColorStop(0.3 , 'orange')
-grd1.addColorStop(0.4 , 'yellow')
+grd1.addColorStop(0.4 , '#ffffe0')
 grd1.addColorStop(0.5 , 'red')
 grd1.addColorStop(0.6 , 'blue')
 grd1.addColorStop(0.7 , 'green')
@@ -86,7 +86,7 @@ grd1.addColorStop(1 , 'rgb(190 135 34)')
     }
 
     let particles = []
-    const noOfParticles = 7000
+    const noOfParticles = 5000
 
     function init() {
         for (let i = 0; i < noOfParticles; i++) {
