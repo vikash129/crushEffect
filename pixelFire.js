@@ -1,8 +1,8 @@
 const myImage = new Image()
 
-//var dataList = [ 'c2' , 'c4' , 'c5' , 'c6','c7' , 'c8','c9','c10','c11' ]
+var dataList = [ 'c2' , 'c4' , 'c5' , 'c6','c7' , 'c8','c9','c10','c11' ]
 //c3
-var dataList = ['ayushkigf']
+//var dataList = ['ayushkigf']
 let imgData = dataList[Math.floor(Math.random() * dataList.length)];
 console.log(imgData)
 fetch('64Img/' + imgData + '.txt').then(res => res.text()).then(src => myImage.src = src)
